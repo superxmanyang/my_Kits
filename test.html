@@ -1,22 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
-    
+
 </body>
 <script src="./kit.js"></script>
 <script>
 
-var b  = kits.randonInt(10,20)
-var a = kits.timestamp()
- console.log(a)
- console.log(b)
+    var b = kits.randonInt(10, 20)
+    var a = kits.timestamp()
+    console.log(a)
+    console.log(b)
 
+    var demo = kits.quchong(['c', 'c', 'c', 'a']);
+    console.log(demo);
+
+
+
+
+//    替换字符串
+    var str = 'asdasdasd'
+
+    var str1 = 'asdasdasdasda'
+
+    while (str1.indexOf('a') !== -1) {
+        str1 = str1.replace('a', '')
+    }
+    console.log(str1);
+    console.log(str1.length);
 
 </script>
+
 </html>
